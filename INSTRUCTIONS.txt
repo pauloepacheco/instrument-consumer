@@ -1,0 +1,16 @@
+How to run:
+--------------
+
+#1 Go to the project folder
+#2 Run: mvn clean install
+#3 Run: mvn exec:java -Dexec.mainClass="com.creditsuisse.task.main.MainApp"
+#4 Tests can be executed using mvn test
+
+Notes
+--------------
+#1 HSQL database is used in order to have the INSTRUMENT_PRICE_MODIFIER table.
+#2 Guava cache is used to get the multiplier value from INSTRUMENT_PRICE_MODIFIER table for a given instrument name. This value is cached for 5 seconds.
+#3 This solution does not load the entire file in memory. Each line of the file is processed and then discarded without keeping it in memory.
+#4 YourKit-Java-Profiler has been used to determine the consume of memory and CPU for this solution.
+#5 I have created a huge file of 32GB and this solution was able to process and compute the data without any issue.
+
