@@ -17,11 +17,12 @@ The Guava cache is used to get the multiplier value from the main table for a gi
  I have created a huge file of 32GB and this solution was able to process and compute the data without any issue.
 
 # Usage
-  1) mvn clean install - Will build and download all dependencies
-  2) mvn exec:java -Dexec.mainClass="com.instrument.consumer.main.MainApp"
-
-## Tests  
-  mvn test
+    mvn clean install 
+    
+    mvn exec:java -Dexec.mainClass="com.instrument.consumer.main.MainApp"
+   
+## Tests   
+    mvn test
 
 # Stack
   **Java 8**
